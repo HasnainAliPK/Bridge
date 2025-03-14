@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="T:Bridge.Car">
+            <summary>
+            Represents a car crossing the bridge
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.Price">
+            <summary>
+            Returns the price for crossing the bridge. 
+            A BroBizz discount of 10% is applied if HasBroBizz is true
+            </summary>
+            <returns>The price in DKK.</returns>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            Returns the vehicle type
+            </summary>
+            <returns>String "Car"</returns>
+        </member>
+        <member name="T:Bridge.MC">
+            <summary>
+            Represents a motorcycle crossing the bridge
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.Price">
+            <summary>
+            Returns the price for crossing the bridge. 
+            A BroBizz discount of 10% is applied if HasBroBizz is true
+            </summary>
+            <returns>The price in DKK.</returns>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            Returns the vehicle type
+            </summary>
+            <returns>String "MC"</returns>
+        </member>
+        <member name="T:Bridge.Vehicle">
+            <summary>
+            Base class for all vehicles crossing the bridge
+            </summary>
+        </member>
+        <member name="F:Bridge.Vehicle._licensePlate">
+            <summary>
+            Stores the licensplate in Vehicle class
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.LicensePlate">
+            <summary>
+            The license plate of the vehicle. Cannot be longer than 7 characters
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Date">
+            <summary>
+            The date when the vehicle crosses the bridge
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.HasBroBizz">
+            <summary>
+            Determines whether the vehicle has a BroBizz discount.
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.Price">
+            <summary>
+            Abstract method to return the price of crossing the bridge
+            </summary>
+            <returns>The price in DKK.</returns>
+        </member>
+        <member name="M:Bridge.Vehicle.VehicleType">
+            <summary>
+            Abstract method to return the type of vehicle
+            </summary>
+            <returns>The vehicle type as a string</returns>
+        </member>
+    </members>
+</doc>
