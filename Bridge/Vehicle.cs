@@ -37,6 +37,11 @@ namespace Bridge
         public DateTime Date { get; set; }
 
         /// <summary>
+        /// Determines whether the vehicle has a BroBizz discount.
+        /// </summary>
+        public bool HasBroBizz { get; set; }
+
+        /// <summary>
         /// Abstract method to return the price of crossing the bridge
         /// </summary>
         /// <returns>The price in DKK.</returns>

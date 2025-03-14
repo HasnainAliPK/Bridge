@@ -12,12 +12,17 @@ namespace Bridge
     public class MC : Vehicle
     {
         /// <summary>
-        /// Returns the price for crossing the bridge
+        /// Returns the price for crossing the bridge. 
+        /// A BroBizz discount of 10% is applied if HasBroBizz is true
         /// </summary>
-        /// <returns>Fixed price of 120 DKK.</returns>
+        /// <returns>The price in DKK.</returns>
         public override double Price()
         {
-            return 120.0;
+            double price = 120.0;
+            if (HasBroBizz)
+                price *= 0.9; // 10% discount
+
+            return price;
         }
 
         /// <summary>
