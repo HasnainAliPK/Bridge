@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbroenTicketLibrary",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServer", "TCPServer\TCPServer.csproj", "{700CEB2B-96CC-4EB4-81C6-7CFAD98347DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPJsonServer", "TCPJsonServer\TCPJsonServer.csproj", "{1D1EFA7E-DC0B-483E-8052-F617A78D9E9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{700CEB2B-96CC-4EB4-81C6-7CFAD98347DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{700CEB2B-96CC-4EB4-81C6-7CFAD98347DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{700CEB2B-96CC-4EB4-81C6-7CFAD98347DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1EFA7E-DC0B-483E-8052-F617A78D9E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1EFA7E-DC0B-483E-8052-F617A78D9E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1EFA7E-DC0B-483E-8052-F617A78D9E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1EFA7E-DC0B-483E-8052-F617A78D9E9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
