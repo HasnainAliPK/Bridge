@@ -13,27 +13,15 @@ namespace BridgeTests
         [TestMethod]
         public void Price_Returns_Fixed_Price_120()
         {
-            // Arrange
-            var mc = new MC();
-
-            // Act
-            double result = mc.Price();
-
-            // Assert
-            Assert.AreEqual(120.0, result);
+            Vehicle mc = new MC();
+            Assert.AreEqual(120.0, mc.Price());
         }
 
         [TestMethod]
         public void VehicleType_Returns_MC()
         {
-            // Arrange
-            var mc = new MC();
-
-            // Act
-            string result = mc.VehicleType();
-
-            // Assert
-            Assert.AreEqual("MC", result);
+            Vehicle mc = new MC();
+            Assert.AreEqual("MC", mc.VehicleType());
         }
     }
 }
