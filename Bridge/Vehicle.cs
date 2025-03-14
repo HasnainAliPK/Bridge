@@ -11,10 +11,25 @@ namespace Bridge
     /// </summary>
     public abstract class Vehicle
     {
+
         /// <summary>
-        /// The license plate of the vehicle
+        /// Stores the licensplate in Vehicle class
         /// </summary>
-        public string LicensePlate { get; set; }
+        private string _licensePlate;
+
+        /// <summary>
+        /// The license plate of the vehicle. Cannot be longer than 7 characters
+        /// </summary>
+        public string LicensePlate
+        {
+            get => _licensePlate;
+            set
+            {
+                if (value.Length > 7)
+                    throw new ArgumentException("License plate cannot be longer than 7 characters.");
+                _licensePlate = value;
+            }
+        }
 
         /// <summary>
         /// The date when the vehicle crosses the bridge
